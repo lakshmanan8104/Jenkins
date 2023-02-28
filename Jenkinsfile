@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Deploy to Remote'){
             steps{
-              sh ' scp -r ${WORKSPACE}/* dcadmin@${staging_server}:/var/mbaquatech/'
+              sh ' scp -r ${WORKSPACE}/* root@${staging_server}:/var/mbaquatech/'
               }
         }
     }
