@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Deploy to Remote'){
             steps{
-              
+              echo 'hello hi welcome'
               
               }
         }
