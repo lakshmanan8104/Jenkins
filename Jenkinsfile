@@ -1,5 +1,5 @@
 pipeline{
-    agent {label, 'deploy'}
+    agent {label 'deploy'}
     environment{
         staging_server="172.31.1.171"
     }
