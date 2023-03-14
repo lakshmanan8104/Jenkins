@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Deploy to Remote'){
             steps{
-              sh ' scp -r ${WORKSPACE}/* root@${staging_server}:/var/lib/jenkins/'
+              sh ' scp -r /var/lib/jenkins/workspace/jenkins/* jenkins@172.31.6.139:/home/ubuntu/'
               
               }
         }
